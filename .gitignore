@@ -6,6 +6,10 @@ cf/
 ## Rider
 .idea
 
+## Roulette
+Roulette/Roulette/Roulette_iOS*/**
+!Roulette/Roulette/Roulette_iOS*/.gitkeep
+
 ## Unity
 # This .gitignore file should be placed at the root of your Unity project directory
 #

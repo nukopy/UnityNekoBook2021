@@ -10,7 +10,7 @@ public class RouletteController : MonoBehaviour
     private float rotSpeed;
     private float attenuationCoefficient;
     private const float ROTATION_SPEED = 10.0f;
-    private const float STOP_THRESHOLD = 0.001f;
+    private const float STOP_THRESHOLD = 0.01f;
     
     void Start()
     {
@@ -66,7 +66,7 @@ public class RouletteController : MonoBehaviour
     {
         Debug.Log("Stop rotating...");
         this.status = Status.Stopping;
-        this.attenuationCoefficient = 0.90f + Random.Range(0.05f, 0.099f);
+        this.attenuationCoefficient = 0.94f + Random.Range(0.01f, 0.0599f);
     }
 
     private void CheckFinished()
