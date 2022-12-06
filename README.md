@@ -17,8 +17,10 @@ Unity 猫本 2021 をやるリポジトリ
 
 ## 成果物
 
+Chapter 1 ~ 2 は基礎的なことを説明する章なので成果物は特になし。デモ動画は Unity アプリの iOS ビルドを実機上で動作させ、収録したものである。
+
 ### Chapter 3
 
-ルーレットアプリ
+ルーレットアプリ on iOS
 
-<div><video controls src="./docs/demo-Roulette.MP4" muted="false"></video></div>
+<video controls src="https://user-images.githubusercontent.com/42367320/206038992-3ba22cf8-fdcf-41af-88b5-3b0787c97c6a.MP4" muted="false" style="max-width: 500px;"></video>
