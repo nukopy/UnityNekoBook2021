@@ -8,9 +8,17 @@ Unity 猫本 2021 をやるリポジトリ
 
 - [x] Chapter 1: ゲームづくりの準備
 - [x] Chapter 2: C# スクリプトの基礎
-- [ ] Chapter 3: オブジェクトの配置と動かし方
+- [x] Chapter 3: オブジェクトの配置と動かし方
 - [ ] Chapter 4: UI と監督オブジェクト
 - [ ] Chapter 5: Prefab と当たり判定
 - [ ] Chapter 6: Physics とアニメーション
 - [ ] Chapter 7: 3D ゲームの作り方
 - [ ] Chapter 8: レベルデザイン
+
+## 成果物
+
+### Chapter 3
+
+ルーレットアプリ
+
+<div><video controls src="./docs/demo-Roulette.MP4" muted="false"></video></div>
