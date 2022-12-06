@@ -1,6 +1,7 @@
 ## User Settings
 # MyProject
 .DS_Store
+cf/
 
 ## Rider
 .idea
