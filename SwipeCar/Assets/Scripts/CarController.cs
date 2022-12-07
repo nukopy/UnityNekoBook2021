@@ -57,6 +57,7 @@ public class CarController : MonoBehaviour
                     // ここには来ないはず
                     break;
             }
+            this.PlayAudio();
         }
 
         this.Run();
@@ -105,5 +106,10 @@ public class CarController : MonoBehaviour
             this.speed = INIT_SPEED;
             this.deceleration = INIT_DECELERATION;
         }
+    }
+
+    private void PlayAudio()
+    {
+        this.GetComponent<AudioSource>().Play();
     }
 }
