@@ -9,7 +9,7 @@ Unity 猫本 2021 をやるリポジトリ
 - [x] Chapter 1: ゲームづくりの準備
 - [x] Chapter 2: C# スクリプトの基礎
 - [x] Chapter 3: オブジェクトの配置と動かし方
-- [ ] Chapter 4: UI と監督オブジェクト
+- [x] Chapter 4: UI と監督オブジェクト
 - [ ] Chapter 5: Prefab と当たり判定
 - [ ] Chapter 6: Physics とアニメーション
 - [ ] Chapter 7: 3D ゲームの作り方
@@ -17,10 +17,16 @@ Unity 猫本 2021 をやるリポジトリ
 
 ## 成果物
 
-Chapter 1 ~ 2 は基礎的なことを説明する章なので成果物は特になし。デモ動画は Unity アプリの iOS ビルドを実機上で動作させ、収録したものである。
+Chapter 1 ~ 2 は基礎的なことを説明する章なので成果物は特になし。デモ動画は Unity アプリの iOS ビルドを実機上で動作させたものである。
 
 ### Chapter 3
 
 ルーレットアプリ on iOS
 
 <video controls src="https://user-images.githubusercontent.com/42367320/206038992-3ba22cf8-fdcf-41af-88b5-3b0787c97c6a.MP4" muted="false" style="max-width: 500px;"></video>
+
+### Chapter 4
+
+チキンレースアプリ on iOS
+
+<video controls src="https://user-images.githubusercontent.com/42367320/206199980-6be550ea-59ad-401e-995f-cd9ffc69d73b.mov" muted="false" style="max-width: 500px;"></video>
