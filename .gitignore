@@ -10,6 +10,10 @@ cf/
 Roulette/Roulette_iOS*/**
 !Roulette/Roulette_iOS*/.gitkeep
 
+## SwipeCar
+SwipeCar/SwipeCar_iOS*/**
+!SwipeCar/SwipeCar_iOS*/.gitkeep
+
 ## Unity
 # This .gitignore file should be placed at the root of your Unity project directory
 #
