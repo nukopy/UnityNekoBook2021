@@ -10,7 +10,7 @@ Unity 猫本 2021 をやるリポジトリ
 - [x] Chapter 2: C# スクリプトの基礎
 - [x] Chapter 3: オブジェクトの配置と動かし方
 - [x] Chapter 4: UI と監督オブジェクト
-- [ ] Chapter 5: Prefab と当たり判定
+- [x] Chapter 5: Prefab と当たり判定
 - [ ] Chapter 6: Physics とアニメーション
 - [ ] Chapter 7: 3D ゲームの作り方
 - [ ] Chapter 8: レベルデザイン
@@ -30,3 +30,9 @@ Chapter 1 ~ 2 は基礎的なことを説明する章なので制作物は特に
 チキンレースゲーム
 
 <video controls src="https://user-images.githubusercontent.com/42367320/206199980-6be550ea-59ad-401e-995f-cd9ffc69d73b.mov" muted="false" style="max-width: 500px;"></video>
+
+### Chapter 5
+
+2D 避けゲーム
+
+<video controls src="https://user-images.githubusercontent.com/42367320/206927714-8cf476aa-577d-4001-9684-c51004e016dc.MP4" muted="false" style="max-width: 500px;"></video>
