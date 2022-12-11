@@ -75,10 +75,12 @@ namespace CatEscape
         
         // members related to effect
         public Sprite ExplosionSprite;
+        public AudioSource audioSourceMove;
         public AudioSource audioSourceDamaged;
         public AudioSource audioSourceDead;
         public AudioClip audioClipDamaged;
         public AudioClip audioClipDead;
+        public AudioClip audioClipMove;
 
         void Start()
         {
@@ -94,12 +96,14 @@ namespace CatEscape
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 this.MoveLeft();
+                this.PlayAudioOnMove();
             }
         
             // 右矢印
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 this.MoveRight();
+                this.PlayAudioOnMove();
             }
             
             // 生死の確認
@@ -188,6 +192,13 @@ namespace CatEscape
                 this.audioSourceDead.clip = audioClipDead;
                 this.audioSourceDead.Play();
             }
+        }
+
+        private void PlayAudioOnMove()
+        {
+            // 移動音
+            this.audioSourceMove.clip = audioClipMove;
+            this.audioSourceMove.Play();
         }
 
         public float GetPlayerHpRatio()
