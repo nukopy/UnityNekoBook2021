@@ -13,7 +13,7 @@ namespace CatEscape
         
         // members
         public GameObject arrowPrefab;
-        private int numArrow = 2; // 同時に生成される矢の数
+        private int numArrow = 3; // 同時に生成される矢の数
         private float delta = 0;
         
         void Update()
