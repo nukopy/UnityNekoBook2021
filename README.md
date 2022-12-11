@@ -15,18 +15,18 @@ Unity 猫本 2021 をやるリポジトリ
 - [ ] Chapter 7: 3D ゲームの作り方
 - [ ] Chapter 8: レベルデザイン
 
-## 成果物
+## 制作物
 
-Chapter 1 ~ 2 は基礎的なことを説明する章なので成果物は特になし。デモ動画は Unity アプリの iOS ビルドを実機上で動作させたものである。
+Chapter 1 ~ 2 は基礎的なことを説明する章なので制作物は特になし。デモ動画は Unity アプリの iOS ビルドを実機上で動作させたものである。
 
 ### Chapter 3
 
-ルーレットアプリ on iOS
+ルーレットゲーム
 
 <video controls src="https://user-images.githubusercontent.com/42367320/206038992-3ba22cf8-fdcf-41af-88b5-3b0787c97c6a.MP4" muted="false" style="max-width: 500px;"></video>
 
 ### Chapter 4
 
-チキンレースアプリ on iOS
+チキンレースゲーム
 
 <video controls src="https://user-images.githubusercontent.com/42367320/206199980-6be550ea-59ad-401e-995f-cd9ffc69d73b.mov" muted="false" style="max-width: 500px;"></video>
