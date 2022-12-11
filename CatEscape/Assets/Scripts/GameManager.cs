@@ -71,6 +71,7 @@ namespace CatEscape
                         Debug.Log("Start game!");
                         this.status = GameStatus.OnGoing;
                         this.StartGame();
+                        this.PlayAudio();
                     }
                     break;
                 case GameStatus.OnGoing:
@@ -87,6 +88,7 @@ namespace CatEscape
                     {
                         Debug.Log("Restart game!");
                         this.status = GameStatus.Ready;
+                        this.PlayAudio();
                         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                     }
                     break;
@@ -113,6 +115,11 @@ namespace CatEscape
                 default:
                     break;
             }
+        }
+
+        private void PlayAudio()
+        {
+            GetComponent<AudioSource>().Play();
         }
     }
 }
