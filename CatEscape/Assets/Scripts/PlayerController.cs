@@ -70,7 +70,7 @@ namespace CatEscape
         
         // members
         private Player player;
-        private float MoveLength = 1.5f;
+        private float MoveLength = 1.0f;
         private float Radius = 1.0f;
         
         // members related to effect
