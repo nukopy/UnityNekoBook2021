@@ -14,6 +14,10 @@ Roulette/Roulette_iOS*/**
 SwipeCar/SwipeCar_iOS*/**
 !SwipeCar/SwipeCar_iOS*/.gitkeep
 
+## CatEscape
+CatEscape/CatEscape_iOS*/**
+!CatEscape/CatEscape_iOS*/.gitkeep
+
 ## Unity
 # This .gitignore file should be placed at the root of your Unity project directory
 #
