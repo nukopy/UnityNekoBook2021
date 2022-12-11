@@ -7,7 +7,7 @@ namespace CatEscape
     public class ArrowGenerator : MonoBehaviour
     {
         // constants
-        private const float Span = 0.75f; // 矢が生成される間隔（単位：秒）
+        private const float Span = 0.5f; // 矢が生成される間隔（単位：秒）
         private const int LeftBoundary = -9;
         private const int RightBoundary = 10;
         

@@ -23,7 +23,7 @@ namespace CatEscape
     public class ArrowController : MonoBehaviour, ICollidable
     {
         // constants
-        private const float SpeedArrowDown = -0.3f;
+        private const float SpeedArrowDown = -0.25f;
         private const float ThresholdYaxisReachedBottom = -5.0f;
 
         // members
