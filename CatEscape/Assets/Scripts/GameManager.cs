@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 namespace CatEscape
 {
@@ -44,7 +45,6 @@ namespace CatEscape
         {
             this.UpdateStatus();
             this.UpdateGameStatusText();
-            elapsedTime += Time.deltaTime;
         }
 
         void StartGame()
@@ -54,8 +54,7 @@ namespace CatEscape
 
         void StopGame()
         {
-            Time.timeScale = 0;
-            
+            // Time.timeScale = 0;
             // ボタンを画面から除去する
             Destroy(leftButton);
             Destroy(rightButton);
@@ -83,13 +82,17 @@ namespace CatEscape
                         this.status = GameStatus.Finished;
                         this.StopGame();
                     }
+                    
+                    // 生きていたらスコアを加算
+                    this.Score();
+                    
                     break;
                 case GameStatus.Finished:
                     if (Input.GetMouseButtonUp(0))
                     {
                         Debug.Log("Restart game!");
-                        // this.PlayAudio();
-                        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                        this.PlayAudio();
+                        StartCoroutine(this.DelaySceneLoad());
                     }
                     break;
                 default:
@@ -120,6 +123,18 @@ namespace CatEscape
         private void PlayAudio()
         {
             GetComponent<AudioSource>().PlayOneShot(this.audioClip);
+        }
+        
+        IEnumerator DelaySceneLoad()
+        {
+            yield return new WaitForSeconds(0.3f);
+            Debug.Log("Reload scene...");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        private void Score()
+        {
+            elapsedTime += Time.deltaTime;
         }
     }
 }
