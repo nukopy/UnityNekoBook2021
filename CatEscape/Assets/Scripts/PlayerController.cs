@@ -96,14 +96,12 @@ namespace CatEscape
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 this.MoveLeft();
-                this.PlayAudioOnMove();
             }
         
             // 右矢印
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 this.MoveRight();
-                this.PlayAudioOnMove();
             }
             
             // 生死の確認
@@ -153,11 +151,13 @@ namespace CatEscape
         public void MoveLeft()
         {
             this.Move(Orientation.Left);
+            this.PlayAudioOnMove();
         }
 
         public void MoveRight()
         {
             this.Move(Orientation.Right);
+            this.PlayAudioOnMove();
         }
         
         public float GetRadius()
