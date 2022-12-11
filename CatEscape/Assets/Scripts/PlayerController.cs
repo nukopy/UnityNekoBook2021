@@ -70,8 +70,8 @@ namespace CatEscape
         
         // members
         private Player player;
-        private float MoveLength = 1.0f;
-        private float Radius = 1.0f;
+        private float MoveLength = 1.25f;
+        private float Radius = 0.9f;
         
         // members related to effect
         public Sprite ExplosionSprite;

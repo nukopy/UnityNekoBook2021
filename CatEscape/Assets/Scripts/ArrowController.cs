@@ -80,6 +80,9 @@ namespace CatEscape
         /// <returns></returns>
         public bool IsCollisionWith(GameObject go)
         {
+            // Player が死んでいるときは衝突判定しない
+            if (go.gameObject.GetComponent<PlayerController>().GetPlayerStatus() == PlayerStatus.Dead) return false;
+            
             // ICollidable を実装していなかったらエラー
             ICollidable collidableGo = go.gameObject.GetComponent<ICollidable>();
             if (collidableGo == null) throw new Exception("Player must implement ICollidable");
