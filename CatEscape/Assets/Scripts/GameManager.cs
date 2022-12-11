@@ -24,6 +24,7 @@ namespace CatEscape
         private GameObject gameStatusText;
         private GameObject leftButton;
         private GameObject rightButton;
+        public AudioClip audioClip;
         private GameStatus status = GameStatus.Ready;
         private float elapsedTime = 0;
 
@@ -87,8 +88,7 @@ namespace CatEscape
                     if (Input.GetMouseButtonUp(0))
                     {
                         Debug.Log("Restart game!");
-                        this.status = GameStatus.Ready;
-                        this.PlayAudio();
+                        // this.PlayAudio();
                         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                     }
                     break;
@@ -119,7 +119,7 @@ namespace CatEscape
 
         private void PlayAudio()
         {
-            GetComponent<AudioSource>().Play();
+            GetComponent<AudioSource>().PlayOneShot(this.audioClip);
         }
     }
 }
